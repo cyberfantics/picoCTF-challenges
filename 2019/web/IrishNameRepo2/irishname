@@ -1,0 +1,7 @@
+picoCTF{m0R3_SQL_plz_aee925db}
+
+https://jupiter.challenges.picoctf.org/problem/64649/login.php
+
+it is also sql but it detect queries like OR keyword ,AND UNION and OTHEr
+so we comment all other things in query. -- is a sign of comments. I pass the query below in username and left password blank
+admin' --

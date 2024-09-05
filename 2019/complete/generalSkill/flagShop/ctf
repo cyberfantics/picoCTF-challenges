@@ -1,0 +1,18 @@
+in this chellange we have total money of 1100. and we need to buy a flag with money more than 10000
+
+after seeing c program we get idea that total cost is decrement after purchasing someting 
+
+but there is no way to increment it
+
+we know that in 2's complement when we cross a certain limit the value goes toward negative
+
+900 - 199
+900 - - 199
+
+
+in this way if we move value towards negative we can increase our balance
+
+
+we know the concept of overflow so we increase our money by just overflowing integer value
+
+let's start

@@ -1,0 +1,7 @@
+picoCTF{ubuntu-19.10-desktop-amd64.iso}
+
+
+Explanation:
+in this chellenge we are concern about info hash
+because in torrent infohash contain details about file
+as info_hash: e2467cbf021192c241367b892230dc1e05c0580e repeated so we check it in google and it gives us file name

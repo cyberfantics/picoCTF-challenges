@@ -1,0 +1,4 @@
+picoCTF{R34DING_LOKd_fil56_succ3ss_cbf2ebf6}
+
+
+echo VGhpcyBpcyB0aGUgc2VjcmV0OiBwaWNvQ1RGe1IzNERJTkdfTE9LZF8= | base64 -d

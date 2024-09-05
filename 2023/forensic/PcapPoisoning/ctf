@@ -1,0 +1,7 @@
+picoCTF{P64P_4N4L7S1S_SU55355FUL_4d72dfcc}
+
+Explanation:
+
+we apply filter to check ctf because we get some login
+
+filter contains "picoCTF" --> in wireshark

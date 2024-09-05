@@ -1,0 +1,8 @@
+picoCTF{ca1cu1at1ng_Mach1n3s_477ce}
+
+Explanation:
+https://jupiter.challenges.picoctf.org/problem/36474/
+we add /robots.txt and get 
+https://jupiter.challenges.picoctf.org/problem/36474/robots.txt
+then we found full path
+https://jupiter.challenges.picoctf.org/problem/36474/477ce.html/robots.txt

@@ -1,0 +1,3 @@
+picoCTF{4cf7ac000c3fb0fa96fb92722ffb2a32}
+
+when we see file type it is a png file. when we examin it throgh exif tool alot of description are present... so we try to unzip and get it

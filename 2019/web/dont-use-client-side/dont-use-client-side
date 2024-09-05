@@ -1,0 +1,6 @@
+
+picoCTF{no_clients_plz_1a3c89}
+
+Explanation:
+	https://jupiter.challenges.picoctf.org/problem/37821/
+	we inspect .html file and see ctf is present in script

@@ -1,0 +1,11 @@
+ picoCTF{s0m3_SQL_f8adf3fb}
+
+https://jupiter.challenges.picoctf.org/problem/33850/
+
+Explanation:
+--> This is a chellenge f0r SQL Injection
+--> wE Append password with ' OR '1'='1 command like\
+
+pass' OR '1'='1 
+
+it run the query that check password or check condition which one is true

@@ -1,0 +1,6 @@
+picoCTF{succ3ssfully_matchtheregex_08c310c6}
+
+Explanation:
+---->http://saturn.picoctf.net:50745/
+it is a simple regex chellenge and we match somethings to validate
+i enter picoCTF and it give flag

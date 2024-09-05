@@ -1,0 +1,6 @@
+picoCTF{5p311ch3ck_15_7h3_w0r57_b741d1b1}
+
+
+../../usr/bin/cat ./blargh/flag.txt 
+
+` cat blargh/flag.txt`

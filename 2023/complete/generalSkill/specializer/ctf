@@ -1,0 +1,5 @@
+picoCTF{y0u_d0n7_4ppr3c1473_wh47_w3r3_d01ng_h3r3_c42168d9}
+
+echo $(<kazam.txt)
+return 0 
+Specialer$ 

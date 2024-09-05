@@ -1,0 +1,6 @@
+picoCTF{WilhelmZwalina}
+
+Explanation:
+	on investigating email we found and ip address
+	we run whois on it and get name
+	whois 173.--.--.--

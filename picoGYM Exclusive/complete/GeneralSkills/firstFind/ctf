@@ -1,0 +1,6 @@
+picoCTF{f1nd_15_f457_ab443fd1}
+
+Explanation:
+ as it is given that we need to find uber-secret.txt file inside files so we run command
+find files | grep uber-secret.txt 
+and we get a path of ctf

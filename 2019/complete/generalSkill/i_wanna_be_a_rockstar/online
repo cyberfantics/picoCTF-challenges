@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head><script type="text/javascript" src="//web-static.archive.org/_static/js/bundle-playback.js?v=6otLFMce" charset="utf-8"></script>
+<script type="text/javascript" src="//web-static.archive.org/_static/js/wombat.js?v=txqj7nKC" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden"};</script>
+<script type="text/javascript" src="//web-static.archive.org/_static/js/ruffle.js"></script>
+<script type="text/javascript">
+  __wm.init("https://web.archive.org/web");
+  __wm.wombat("https://codewithrockstar.com/online","20190522020843","https://web.archive.org/","web","//web-static.archive.org/_static/",
+	      "1558490923");
+</script>
+<link rel="stylesheet" type="text/css" href="//web-static.archive.org/_static/css/banner-styles.css?v=S1zqJCYt" />
+<link rel="stylesheet" type="text/css" href="//web-static.archive.org/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://web.archive.org/web/20190522020843js_/https://www.googletagmanager.com/gtag/js?id=UA-4266979-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-4266979-13');
+  </script>
+  <meta charset="utf-8">
+  <title>rockstar : try it</title>
+  <link type="text/css" rel="stylesheet" href="/web/20190522020843cs_/https://codewithrockstar.com/assets/styles.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="shortcut icon" type="image/x-icon" href="/web/20190522020843im_/https://codewithrockstar.com/favicon.ico"/>
+  <script src="/web/20190522020843js_/https://codewithrockstar.com/js/jquery/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>ROCKSTAR</h1>
+    <h2>Tommy used to work on the docs.</h2>
+    <nav>
+    <ul>
+        <li><a href="/web/20190522020843/https://codewithrockstar.com/">home</a></li>
+        <li><a href="/web/20190522020843/https://codewithrockstar.com/online">try it</a></li>
+        <li><a href="/web/20190522020843/https://codewithrockstar.com/docs">docs</a></li>
+        <li><a href="/web/20190522020843/https://codewithrockstar.com/code">code</a></li>
+        <li><a href="/web/20190522020843/https://codewithrockstar.com/news">news</a></li>
+        <li><a href="/web/20190522020843/https://codewithrockstar.com/swag">swag</a></li>
+    </ul>
+</nav>
+  </header>
+  <main>
+    <p>Type your Rockstar program here, or try these examples: <a href="online?load=/rockstar/examples/fizzbuzz.rock">fizzbuzz</a>
+    &bull; <a href="online?load=/rockstar/examples/99_beers.rock">99 bottles of beer</a></p>
+<textarea id="program-source">Rockstar is a big bad monster
+Shout Rockstar
+</textarea>
+<input type="button" value="Rock!" onclick="rock();"/>
+<p>Output:</p>
+<textarea id="program-output"></textarea>
+<p>Online Rockstar interpreter powered by <a href="https://web.archive.org/web/20190522020843/https://github.com/RockstarLang/rockstar/tree/master/satriani">Satriani</a>.</p>
+
+
+
+<script type="text/javascript" src="/web/20190522020843js_/https://codewithrockstar.com/js/satriani.js"></script>
+<script type="text/javascript">
+    function output(...args) {
+        document.getElementById('program-output').value += args + '\n';
+    }
+
+    function rock() {
+        document.getElementById('program-output').value = '';
+        let source = document.getElementById('program-source').value + "\n\n\n\n\n";
+        let input = () => { return window.prompt('Rockstar:'); }
+        let rockstar = new Satriani.Interpreter(output);
+        try {
+            rockstar.run(source, input, output);
+        } catch (e) {
+            if (e.location && e.location.start) {
+                var lines = source.split(/\n/);
+                output(lines[e.location.start.line - 1]);
+                output(' '.repeat(e.location.start.column - 1) + '^');
+                output(e.message);
+                output(sourceFilePath + " line " + e.location.start.line + " col " + e.location.start.column);
+            } else {
+                output(e);
+            }
+        }
+    }
+
+    $(function () {
+        if (location.search && location.search.split) {
+            pairs = location.search.substring(1).split('&');
+            for (var i = 0; i < pairs.length; i++) {
+                if (pairs[i] && pairs[i].split) bits = pairs[i].split('=');
+                if (bits[0] == 'load') loadRockstar(bits[1]);
+            }
+        }
+        $('#program-source').keydown(function (e) {
+            if ((e.metaKey || e.ctrlKey) && e.keyCode == 13) rock();
+        });
+    });
+
+    function loadRockstar(url) {
+        $.get(url, function (data) {
+            document.getElementById('program-source').value = data;
+
+        });
+        return (false);
+    }
+
+
+
+
+
+</script>
+  </main>
+  <footer>
+    codewithrockstar.com website copyright &copy; 2018-2019 <a href="https://web.archive.org/web/20190522020843/https://www.dylanbeattie.net/">dylan beattie</a>
+    &bull;
+    <a href="/web/20190522020843/https://codewithrockstar.com/code_of_conduct">code of conduct</a>
+  </footer>
+</body>
+
+</html><!--
+     FILE ARCHIVED ON 02:08:43 May 22, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:35:17 Nov 12, 2023.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 104.169
+  exclusion.robots: 0.179
+  exclusion.robots.policy: 0.166
+  cdx.remote: 0.074
+  esindex: 0.013
+  LoadShardBlock: 73.459 (3)
+  PetaboxLoader3.datanode: 52.868 (4)
+  load_resource: 69.071
+  PetaboxLoader3.resolve: 49.311
+-->

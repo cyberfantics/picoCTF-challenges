@@ -1,0 +1,7 @@
+picoCTF{D1d_u_kn0w_ppts_r_z1p5}
+
+we unzip file and fount a folder named slidemaster . there is a file named hidden present in which base64 encoded text is present we grep it useing
+
+cat hidden | tr -d ' ' | base64 -d
+
+and that's it

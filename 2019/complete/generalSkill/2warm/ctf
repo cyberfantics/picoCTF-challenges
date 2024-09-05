@@ -1,0 +1,17 @@
+picoCTF{101010}
+
+Can you convert the number 42 (base 10) to binary (base 2)?
+Start with the decimal number, which is 42.
+Divide it by 2. You get a quotient of 21 and a remainder of 0.
+Divide the quotient (21) by 2 again. You get a quotient of 10 and a remainder of 1.
+Continue this process until the quotient becomes 0.
+Now, let's write down the remainders from bottom to top, and you'll have the binary representation of 42:
+
+42 in decimal = 101010 in binary.
+
+So, 42 in base 10 is equal to 101010 in base 2.
+
+
+
+
+

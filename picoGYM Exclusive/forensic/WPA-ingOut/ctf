@@ -1,0 +1,8 @@
+picoCTF{mickeymouse}
+
+Explanation:
+	--> it is given that we use rockyou.txt distionary
+
+	--> run command aircrack-ng -w /usr/share/wordlists/rockyou.txt wpa-ing_out.pcap
+
+that's how we got password which is mickeymouse

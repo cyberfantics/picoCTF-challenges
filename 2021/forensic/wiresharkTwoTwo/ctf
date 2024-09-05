@@ -1,0 +1,4 @@
+picoCTF{dns_3xf1l_ftw_deadbeef}  
+
+Explanation
+tshark -r shark2.pcapng -T fields -e dns.qry.name -Y 'dns.qry.name!="" && ip.dst==18.217.1.57' | grep -oE "^[^.]*" | uniq | base64 -d

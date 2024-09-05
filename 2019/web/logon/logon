@@ -1,0 +1,6 @@
+picoCTF{th3_c0nsp1r4cy_l1v3s_d1c24fef}
+
+Explanation:
+	https://jupiter.challenges.picoctf.org/problem/13594/
+	login through admin admin
+	see values of cookies and change admin value = True	

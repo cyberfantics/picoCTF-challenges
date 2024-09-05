@@ -1,0 +1,10 @@
+picoCTF{succ3ss_@u7h3nt1c@710n_bc6d9041}
+
+explanation:
+	it is a jAuth challenge so we play with cookies and modify cookie
+	we use burpsuite to capture cookie for this website
+	http://saturn.picoctf.net:55824/
+	we paste cookie in https://token.dev/ which is jwt debugger site
+	we modify alg:'none' and role:'admin'
+	we change cookie and send request
+	that's it

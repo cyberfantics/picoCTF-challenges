@@ -1,0 +1,19 @@
+picoCTF{uS1ng_v1m_3dit0r_1cee9dcb}
+
+
+Explanation:
+	we move toward root directory
+	cd ~
+	we than run sudo commands and we see that sudo is not allowed for picoplayer
+	we get a hint that if we run commands in vim they works like a sudo 
+	so we open vim
+	press esc and ! and then give space 
+	and run command to see files present in root
+	ls -a /root
+	for getting a nicer output we run command like
+	ls -al /root
+	nice we get that a flag.txt file is hidden in root directory
+	now we just need to print it to see a flag
+	cat -al /root/.flag.txt
+
+

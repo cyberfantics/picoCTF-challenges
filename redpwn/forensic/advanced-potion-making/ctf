@@ -1,0 +1,5 @@
+picoCTF{w1z4rdry}
+
+-----> file headers of png files are courropted so we change them first
+
+display -monochrome advanced-potion-making

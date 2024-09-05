@@ -1,0 +1,11 @@
+picoCTF{proxies_all_the_way_df44c94c} 
+
+Explanation:
+
+echo cGljb0NURntwcm94aWVzX2FsbF90aGVfd2F5X2RmNDRjOTRjfQ== | base64 -d
+
+we run the site on burpsuite and see that it redirect page and when we saw these pages we finds some base64 decodeing there
+after seeing we find flag
+
+-->http://saturn.picoctf.net:53858/home
+

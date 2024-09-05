@@ -1,0 +1,7 @@
+picoCTF{up><_m3_f7w_77ad107e}
+
+
+754635 is favourite number which we got through upx -d filename 
+then we use ghidra to see disassamble code
+we find condition and hexadesimal value
+when we paste it in python we get favourite number

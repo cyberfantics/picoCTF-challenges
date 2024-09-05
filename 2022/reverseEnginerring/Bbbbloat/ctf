@@ -1,0 +1,8 @@
+picoCTF{cu7_7h3_bl047_36dd316a}
+
+Explanation:
+	ghidra
+	we get a condition 
+	if local48 == 0x86137
+	python 
+	and paste it to get flag passwd

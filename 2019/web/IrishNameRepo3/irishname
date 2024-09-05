@@ -1,0 +1,10 @@
+picoCTF{3v3n_m0r3_SQL_7f5767f6}
+
+Explanation:
+
+-->https://jupiter.challenges.picoctf.org/problem/54253/login.html
+
+first we try ' or 1=1; it gives us the option to try be instead of or
+This time we run this query
+' be 1=1;
+and get flag. Hurryyyyyyyyyyyyy

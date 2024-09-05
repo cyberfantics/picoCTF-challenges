@@ -1,0 +1,18 @@
+picoCTF{learning_about_converting_values_00a975ff}
+
+Let us see how data is stored
+oven
+Please give the 01101111 01110110 01100101 01101110 as a word.
+...
+you have 45 seconds.....
+
+Input:
+oven
+Please give me the  157 166 145 156 as a word.
+Input:
+oven
+Please give me the 736c75646765 as a word.
+Input:
+sludge
+You've beaten the challenge
+Flag: picoCTF{learning_about_converting_values_00a975ff}

@@ -1,0 +1,12 @@
+picoCTF{Hiddinng_An_imag3_within_@n_ima9e_85e04ab8}
+
+
+Explanation:
+	--> binwalk flag.png --> it shows that there is something extraction in it
+	--> binwalk -e flag.png 
+	it extract and a secret folder appear when we open it, it show a file containing flag
+
+
+	--> Another approch is to unzip the file
+
+	--> unzip flag.png

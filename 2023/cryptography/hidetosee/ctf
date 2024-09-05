@@ -1,0 +1,5 @@
+picoCTF{atbash_crack_1f84d779}
+
+steghide extract -sf at_bash.jpg
+
+atbash cipher
